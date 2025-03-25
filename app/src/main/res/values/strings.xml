@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Aplikasi To-Do List</string>
+    <string name="app_bio">Aplikasi untuk membantu mengelola tugas harian Anda. Tambahkan, tandai selesai, atau hapus tugas Anda dengan mudah!</string>
+    <string name="task_placeholder">Masukkan nama tugas</string>
+    <string name="add_task">Tambah Tugas</string>
+    <string name="no_tasks">Belum ada tugas. Tambahkan tugas untuk memulai!</string>
+    <string name="task_list">Daftar Tugas</string>
+    <string name="delete_task">Hapus Tugas</string>
+    <string name="complete_task">Tandai Selesai</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="copyright">Aplikasi To-Do List ini dirancang untuk membantu Anda mengelola tugas sehari-hari dengan mudah. Anda dapat menambahkan, menghapus, dan menandai tugas selesai.\nCopyright @ 2025 %1$s.\nAll rights reserved.</string>
+    <string name="kembali">Kembali</string>
+    <string name="confirm_delete">Apakah Anda yakin ingin menghapus tugas ini?</string>
+    <string name="task_completed">Tugas selesai!</string>
+</resources>
