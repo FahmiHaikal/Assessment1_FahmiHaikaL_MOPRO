@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TodoList App</string>
+    
+    <!-- TodoList strings -->
+    <string name="add_task">Tambah Tugas</string>
+    <string name="task_placeholder">Masukkan tugas baru</string>
+    <string name="no_tasks">Belum ada tugas</string>
+    <string name="task_list">Daftar Tugas</string>
+    <string name="about">Tentang</string>
+    <string name="back">Kembali</string>
+    <string name="about_app">Tentang Aplikasi</string>
+    <string name="share">Bagikan</string>
+    <string name="copyright">
+        Aplikasi TodoList sederhana ini dirancang untuk membantu Anda mengatur daftar tugas harian Anda.
+        Anda dapat menambahkan, menyelesaikan, dan menghapus tugas sesuai kebutuhan.
+        \n\nCopyright @ 2025 Fahmi Haikal.
+        \nAll rights reserved.
+    </string>
+    <string name="priority">Prioritas</string>
+    <string name="high">Tinggi</string>
+    <string name="medium">Sedang</string>
+    <string name="low">Rendah</string>
+    <string name="complete_task">Selesaikan Tugas</string>
+    <string name="delete_task">Hapus Tugas</string>
+    <string name="task_details">Detail Tugas</string>
+    <string name="dark_mode">Mode Gelap</string>
+    <string name="light_mode">Mode Terang</string>
+    <string name="language">Bahasa</string>
+    <string name="edit_task">Edit Tugas</string>
+    <string name="invalid_id">ID Tugas tidak valid.</string>
+    <string name="description_not_available">Deskripsi untuk tugas dengan ID: %1$s tidak tersedia.</string>
+</resources> 
