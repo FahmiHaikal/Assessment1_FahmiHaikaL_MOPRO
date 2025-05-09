@@ -5,6 +5,7 @@
     <!-- TodoList strings -->
     <string name="add_task">Tambah Tugas</string>
     <string name="task_placeholder">Masukkan tugas baru</string>
+
     <string name="no_tasks">Belum ada tugas</string>
     <string name="task_list">Daftar Tugas</string>
     <string name="about">Tentang</string>

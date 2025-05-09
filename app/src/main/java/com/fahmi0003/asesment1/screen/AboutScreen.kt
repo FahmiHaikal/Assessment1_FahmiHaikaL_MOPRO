@@ -1,6 +1,7 @@
 package com.fahmi0003.asesment1.screen
 
 import android.content.Intent
+import android.widget.Toast
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
@@ -21,7 +22,9 @@ import com.fahmi0003.asesment1.R
 @OptIn(ExperimentalMaterial3Api::class)
 fun AboutScreen(navController: NavHostController) {
     val context = LocalContext.current
-    
+    val shareText = stringResource(id = R.string.share_text) // Simpan string resource di variabel
+    val noAppFoundText = stringResource(id = R.string.no_app_found)
+
     Scaffold(
         topBar = {
             TopAppBar(
@@ -45,10 +48,18 @@ fun AboutScreen(navController: NavHostController) {
                     IconButton(onClick = {
                         val sendIntent = Intent().apply {
                             action = Intent.ACTION_SEND
-                            putExtra(Intent.EXTRA_TEXT, "Check out this awesome TodoList app!")
+                            putExtra(Intent.EXTRA_TEXT, shareText) // Gunakan variabel di sini
                             type = "text/plain"
                         }
-                        context.startActivity(Intent.createChooser(sendIntent, null))
+                        if (sendIntent.resolveActivity(context.packageManager) != null) {
+                            context.startActivity(Intent.createChooser(sendIntent, null))
+                        } else {
+                            Toast.makeText(
+                                context,
+                                noAppFoundText, // Gunakan variabel di sini
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        }
                     }) {
                         Icon(
                             imageVector = Icons.Default.Share,
@@ -69,19 +80,22 @@ fun AboutScreen(navController: NavHostController) {
         ) {
             Image(
                 painter = painterResource(id = R.drawable.todolist),
-                contentDescription = "TodoList Logo",
-                modifier = Modifier
-                    .size(150.dp)
+                contentDescription = stringResource(R.string.app_logo_description),
+                modifier = Modifier.size(150.dp)
             )
-            
+
             Card(
-                modifier = Modifier.fillMaxWidth()
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp) // Menambahkan padding horizontal untuk estetika
             ) {
                 Text(
                     text = stringResource(id = R.string.copyright),
-                    modifier = Modifier.padding(16.dp)
+                    modifier = Modifier.padding(16.dp),
+                    style = MaterialTheme.typography.bodyMedium
                 )
             }
         }
     }
 }
+

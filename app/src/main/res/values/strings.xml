@@ -30,4 +30,9 @@
     <string name="edit_task">Edit Task</string>
     <string name="invalid_id">Task ID tidak valid.</string>
     <string name="description_not_available">Deskripsi untuk task dengan ID: %1$s tidak tersedia.</string>
+    <string name="no_app_found" translatable="false">Tidak ada tugas</string>
+    <string name="share_text" translatable="false">Bagikan</string>
+    <string name="app_logo_description" translatable="false">Deskripsi</string>
+
+
 </resources>
