@@ -1,5 +1,4 @@
 package com.fahmi0003.asesment1.navigation
-
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
@@ -15,7 +14,6 @@ import com.fahmi0003.asesment1.screen.TaskDetailsScreen
 @Composable
 fun SetUpNavGraph(navController: NavHostController = rememberNavController()) {
     NavHost(navController = navController, startDestination = Screen.Home.route) {
-
         composable(route = Screen.Home.route) {
             MainScreen(navController)
         }
